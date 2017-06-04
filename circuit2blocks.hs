@@ -9,6 +9,7 @@ data CircuitTopoItem = Edge { name :: String, source :: String, dest :: String, 
 type CircuitTopology = [CircuitTopoItem]
 
 data Coeff = Var String | One | Mul Coeff Coeff | Sum Coeff Coeff | Minus Coeff | Div Coeff Coeff
+		deriving Show
 
 type Variable = String
 
