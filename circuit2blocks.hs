@@ -10,5 +10,9 @@ type CircuitTopology = [CircuitTopoItem]
 
 data Coeff = Var String | One | Mul Coeff Coeff | Sum Coeff Coeff | Minus Coeff | Div Coeff Coeff
 
+type Variable = String
+
+type Equation = ([(Coeff , Variable)] , [(Coeff , Variable)])
+
 
 
